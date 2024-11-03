@@ -6,7 +6,7 @@
 /*   By: mohabid <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 21:34:55 by mohabid           #+#    #+#             */
-/*   Updated: 2024/10/31 15:26:43 by mohabid          ###   ########.fr       */
+/*   Updated: 2024/11/01 20:18:23 by mohabid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -84,9 +84,14 @@ char	**ft_split(char const *s, char c)
 }
 /*int main()
 {
-	char *cla = NULL;
-	char **tab = ft_split(cla,'\0');
-	if (NULL == tab)
-	printf("sf l9ina null");
+	char *cla = "try to split this";
+	char **tab = ft_split(cla,' ');
+	size_t i = 0;
+	while(i < ft_countword(cla,' '))
+	{
+		printf(" tab[%zu] = %s\n",i,tab[i]);
+		i++;
+	}
+	free(tab);
 	return (0);
 }*/

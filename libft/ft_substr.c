@@ -6,7 +6,7 @@
 /*   By: mohabid <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 18:27:36 by mohabid           #+#    #+#             */
-/*   Updated: 2024/10/31 21:05:03 by mohabid          ###   ########.fr       */
+/*   Updated: 2024/11/01 14:24:55 by mohabid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	i;
 	size_t	s_len;
 
-	s_len = ft_strlen(s);
 	if (!s)
 		return (NULL);
+	s_len = ft_strlen(s);
 	if (start >= s_len)
 		return (ft_strdup(""));
 	if (len > s_len - start)
@@ -37,9 +37,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	substr[i] = '\0';
 	return (substr);
 }
-/*
-int main() {
-    const char *str = "Hello, World!";
+/*int main() {
+    const char *str = NULL;
     unsigned int start = 7;
     size_t len = 4;
 

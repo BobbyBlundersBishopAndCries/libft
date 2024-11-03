@@ -6,7 +6,7 @@
 /*   By: mohabid <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 17:39:58 by mohabid           #+#    #+#             */
-/*   Updated: 2024/10/31 20:09:54 by mohabid          ###   ########.fr       */
+/*   Updated: 2024/11/01 20:19:55 by mohabid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,10 @@ char	*ft_strdup(const char *s1)
 	result[i] = '\0';
 	return (result);
 }
-/*int main() {
-    const char *original = NULL;
+/*
+int main() {
+	//strdup(NULL);
+ 	const char *original = NULL;
     char *copy = ft_strdup(original);
 
     if (copy) {

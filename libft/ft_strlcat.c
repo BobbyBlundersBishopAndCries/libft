@@ -6,7 +6,7 @@
 /*   By: mohabid <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 14:53:58 by mohabid           #+#    #+#             */
-/*   Updated: 2024/10/30 10:07:12 by mohabid          ###   ########.fr       */
+/*   Updated: 2024/11/01 20:19:10 by mohabid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,14 +35,13 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[i + k] = '\0';
 	return (i + j);
 }
-/*
-int main() {
-    char dest[10] = "Hello";
+
+/*int main() {
+    char dest[20] = "wekweqjhewqre";
     const char *src = " World!";
+    size_t result = strlcat(NULL,"s", 2);
 
-    size_t result = ft_strlcat(dest, src, sizeof(dest));
-
-    printf("Resulting String: \"%s\"\n", dest);
+   printf("Resulting String: \"%s\"\n", dest);
     printf("Total Length: %zu\n", result);
 
     return 0;

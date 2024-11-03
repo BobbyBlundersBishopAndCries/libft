@@ -6,7 +6,7 @@
 /*   By: mohabid <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 12:32:31 by mohabid           #+#    #+#             */
-/*   Updated: 2024/10/31 20:19:48 by mohabid          ###   ########.fr       */
+/*   Updated: 2024/11/03 15:10:53 by mohabid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 /*
 int main()
 {
-	ft_memmove(NULL,NULL,5);
+	memmove((void *)"abc" ,(void *)"abcd",3);
+	//ft_memmove(NULL,NULL,0);
 	//printf("\"%s\"", src);
 	return 0;
 }*/
