@@ -6,7 +6,7 @@
 /*   By: mohabid <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 02:21:35 by mohabid           #+#    #+#             */
-/*   Updated: 2024/11/06 17:19:28 by mohabid          ###   ########.fr       */
+/*   Updated: 2024/11/06 17:32:47 by mohabid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,7 +84,7 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	lst = ft_helper(s, lst, c);
 	return (lst);
-}//
+}
 
 /*int	main(void)
 {

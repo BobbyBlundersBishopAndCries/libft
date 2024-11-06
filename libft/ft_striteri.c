@@ -6,7 +6,7 @@
 /*   By: mohabid <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 00:34:35 by mohabid           #+#    #+#             */
-/*   Updated: 2024/11/06 17:00:44 by mohabid          ###   ########.fr       */
+/*   Updated: 2024/11/06 17:33:17 by mohabid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -24,7 +24,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		i++;
 	}
 }
-
+/*
 void funfunction(unsigned int a, char *s)
 {
 	*s = *s + 1;
@@ -36,4 +36,4 @@ int main()
 	ft_striteri(str ,funfunction);
 	printf("Output = %s\n",str);
 	return 0;
-}
+}*/
