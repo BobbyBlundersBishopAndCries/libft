@@ -23,8 +23,7 @@ t_list	*ft_lstnew(void *content)
 	new -> next = NULL;
 	return (new);
 }
-/*
-int main()
+/*int main()
 {
     int *value = (int *)malloc(sizeof(int));
     *value = 42;

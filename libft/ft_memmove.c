@@ -35,11 +35,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-/*
-int main()
-{
-	memmove((void *)"abc" ,(void *)"abcd",3);
-	//ft_memmove(NULL,NULL,0);
-	//printf("\"%s\"", src);
-	return 0;
-}*/

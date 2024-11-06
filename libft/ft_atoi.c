@@ -6,7 +6,7 @@
 /*   By: mohabid <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 14:09:18 by mohabid           #+#    #+#             */
-/*   Updated: 2024/10/25 12:32:58 by mohabid          ###   ########.fr       */
+/*   Updated: 2024/11/06 02:35:00 by mohabid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,3 @@ int	ft_atoi(const char *nptr)
 	}
 	return (result * sign);
 }
-/*
-int	main(void)
-{
-	printf("%d\n", ft_atoi("-745548545456456465"));
-	return 0;
-}*/

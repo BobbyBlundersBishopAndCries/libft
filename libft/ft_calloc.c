@@ -14,44 +14,38 @@
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
-	void	*ptr;
-	size_t	i;
+	unsigned char	*ptr;
+	size_t			i;
 
 	i = 0;
 	if (size * nmemb > SIZE_MAX)
 		return (NULL);
-	ptr = (void *)malloc(size * nmemb);
+	ptr = (unsigned char *)malloc(size * nmemb);
 	if (!ptr)
 		return (NULL);
+	ptr[0] = 0;
 	while (i < nmemb * size)
 	{
-		((unsigned char *)ptr)[i] = 0;
+		ptr[i] = 0;
 		i++;
 	}
-	return (ptr);
+	return ((void *)(ptr));
 }
 /*int main() {
-    size_t n = 5;
-    int *arr;
-	arr = (int *)calloc(0,0);
-	if(!arr)
-	{
-		printf("Memory allocation fails");
+	// size_t n = 1;
+	int *arr;
+	// arr = (int *)calloc(0,0);
+	// if(!arr)
+	// {
+	// 	printf("Memory allocation fails");
+	// 	return 1;
+	// }
+	// free(arr);
+	arr = (int *)ft_calloc(0, 0);
+	if (arr == NULL) {
+		printf("Memory allocation failed.\n");
 		return 1;
 	}
-    for (size_t i = 0; i < n; i++) {
-        printf("arr[%zu] = %d\n", i, arr[i]);
-    }
 	free(arr);
-    arr = (int *)ft_calloc(0, 0);
-    if (arr == NULL) {
-        printf("Memory allocation failed.\n");
-        return 1;
-    }
-    printf("Allocated array values:\n");
-    for (size_t i = 0; i < n; i++) {
-        printf("arr[%zu] = %d\n", i, arr[i]);
-    }
-    free(arr);
-    return 0;
+	return 0;
 }*/

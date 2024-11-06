@@ -20,27 +20,20 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 
 	a = (unsigned char *)s1;
 	b = (unsigned char *)s2;
+	if (a[0] == '\0' && b[0] == '\0')
+		return (0);
 	i = 0;
 	if (n == 0)
 		return (0);
 	while (i < n)
 	{
 		if (a[i] != b[i])
-			return (a[i] - b[i]);
+			return ((unsigned char)a[i] - (unsigned char)b[i]);
 		i++;
 	}
 	return (0);
 }
-/*
-int main() {
-    const char str1[] = "Hello";
-    const char str2[] = "Hello!";
-    
-    int result = ft_memcmp(str1, str2, 6);
-    if (result == 0) {
-        printf("The memory blocks are equal.\n");
-    } else {
-        printf("The memory blocks differ by %d.\n", result);
-    }
-    return 0;
-}*/
+// int main() {
+//     const char *str1 = "hello";
+//     return 0;
+// }

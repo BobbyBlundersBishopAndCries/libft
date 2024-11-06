@@ -1,14 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
+/*   try.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mohabid <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/23 21:34:55 by mohabid           #+#    #+#             */
-/*   Updated: 2024/11/01 20:18:23 by mohabid          ###   ########.fr       */
+/*   Created: 2024/11/06 02:21:35 by mohabid           #+#    #+#             */
+/*   Updated: 2024/11/06 17:19:28 by mohabid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 static size_t	ft_countword(char const *s, char c)
@@ -76,22 +77,32 @@ char	**ft_split(char const *s, char c)
 {
 	char	**lst;
 
+	if (!s)
+		return (NULL);
 	lst = (char **)malloc((ft_countword(s, c) + 1) * sizeof(char *));
-	if (!s || !lst)
+	if (!lst)
 		return (NULL);
 	lst = ft_helper(s, lst, c);
 	return (lst);
-}
-/*int main()
+}//
+
+/*int	main(void)
 {
-	char *cla = "try to split this";
-	char **tab = ft_split(cla,' ');
-	size_t i = 0;
-	while(i < ft_countword(cla,' '))
+	const char	*cla;
+	size_t		i;
+
+	cla = NULL;
+	char **tab = ft_split(cla, 'z');
+	if (tab)
 	{
-		printf(" tab[%zu] = %s\n",i,tab[i]);
-		i++;
+		i = 0;
+		while (tab[i])
+		{
+			printf("tab[%zu] = %s\n", i, tab[i]);
+			free(tab[i]);
+			i++;
+		}
+		free(tab);
 	}
-	free(tab);
 	return (0);
 }*/
