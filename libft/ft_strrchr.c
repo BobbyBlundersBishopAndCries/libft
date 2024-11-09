@@ -29,15 +29,14 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
-/*
-int main()
-{
-	const char *s = "Sat is too good at chess.";
-	char c = 'i';
-	char *result = ft_strrchr(s,c);
-	if(result)
-		printf("found %c at position : %zu\n",c,result - s);
-	else
-		printf("character not found\n");
-	return 0;
-}*/
+// int main()
+// {
+// 	const char *s = NULL;
+// 	char c = 'i';
+// 	char *result = strrchr(s,c);
+// 	if(result)
+// 		printf("found %c at position : %zu\n",c,result - s);
+// 	else
+// 		printf("character not found\n");
+// 	return 0;
+// }

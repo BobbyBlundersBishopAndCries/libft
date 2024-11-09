@@ -42,9 +42,8 @@ char	*ft_strtrim(const char *s1, const char *set)
 	size_t	start;
 	char	*result;
 	size_t	end;
-	size_t	i;
 
-	if (s1 == NULL)
+	if (s1 == NULL || set == NULL)
 		return (NULL);
 	start = 0;
 	while (s1[start] && is_set(set, s1[start]))
@@ -57,7 +56,6 @@ char	*ft_strtrim(const char *s1, const char *set)
 	result = (char *)malloc((end - start) * sizeof(char) + 1);
 	if (!result)
 		return (NULL);
-	i = 0;
 	ft_strlcpy(result, s1 + start, end - start + 1);
 	return (result);
 }
@@ -66,7 +64,7 @@ int	main(void)
 {
 	char	*result;
 
-	result = ft_strtrim("abcdba","acb");
+	result = ft_strtrim("",NULL);
 	printf("%s", result);
 	free(result);
 	return (0);

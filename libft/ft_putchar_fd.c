@@ -13,20 +13,19 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
-	write(fd, &c, 1);
+		write(fd, &c, 1);
 }
-/*
-int main()
-{
-    int fd;
+// int main()
+// {
+// 	int fd;
 
-    fd = 0; // 1 is the file descriptor for stdout
-    ft_putchar_fd('H', fd);
-    ft_putchar_fd('e', fd);
-    ft_putchar_fd('l', fd);
-    ft_putchar_fd('l', fd);
-    ft_putchar_fd('o', fd);
-    ft_putchar_fd('\n', fd);
-    close(fd);
-return 0;
-}*/
+// 	fd = -2; // 1 is the file descriptor for stdout
+// 	ft_putchar_fd('H', fd);
+// 	ft_putchar_fd('e', fd);
+// 	ft_putchar_fd('l', fd);
+// 	ft_putchar_fd('l', fd);
+// 	ft_putchar_fd('o', fd);
+// 	ft_putchar_fd('\n', fd);
+// 	close(fd);
+// return 0;
+// }

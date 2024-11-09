@@ -30,12 +30,11 @@ void	*ft_memset(void *s, int c, size_t n)
 void	*ft_memset(void *s, int c, size_t n);
 
 int main() {
-    char str[50] = "Hello, World!";
+    char *str = NULL;
     printf("Original string: %s\n", str);
-    ft_memset(str, 'X', 5);
+    memset(str, 'X', 5);
 
     printf("Modified string: %s\n", str); // Output will be "XXXXX, World!"
 
     return 0;
-}
-*/
+}*/

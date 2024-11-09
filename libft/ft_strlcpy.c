@@ -33,13 +33,12 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 /*
 int main() {
     char dest[10];
-    const char *src = "Hello, World!";
+    const char *src ="abc";
     
-    size_t result = ft_strlcpy(dest, src, sizeof(dest));
+    size_t result = ft_strlcpy(dest, src, 0);
     
     printf("Copied String: \"%s\"\n", dest);
     printf("Length of Source: %zu\n", result);
 
     return 0;
-}
-*/
+}*/

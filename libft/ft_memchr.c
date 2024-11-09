@@ -26,12 +26,12 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-/*
-int main() {
-    const char str[] = "Hello, World!";
-    char c = 'W';
 
-    void *result = ft_memchr(str, c, sizeof(str));
+/*int main() {
+    const char *str = NULL;
+    char c = '\0';
+
+    void *result = ft_memchr(str, '\t', 0);
 
     if (result) {
         printf("Found '%c' at position: %zu\n", c,\

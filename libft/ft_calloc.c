@@ -18,7 +18,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	size_t			i;
 
 	i = 0;
-	if (size * nmemb > SIZE_MAX)
+	if (size != 0 && nmemb > SIZE_MAX / size)
 		return (NULL);
 	ptr = (unsigned char *)malloc(size * nmemb);
 	if (!ptr)
@@ -31,21 +31,22 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	}
 	return ((void *)(ptr));
 }
-/*int main() {
+/*
+int main() {
 	// size_t n = 1;
 	int *arr;
-	// arr = (int *)calloc(0,0);
-	// if(!arr)
-	// {
-	// 	printf("Memory allocation fails");
-	// 	return 1;
-	// }
-	// free(arr);
-	arr = (int *)ft_calloc(0, 0);
-	if (arr == NULL) {
-		printf("Memory allocation failed.\n");
+	arr = (int *)calloc(0,0);
+	if(!arr)
+	{
+		printf("Memory allocation fails");
 		return 1;
 	}
 	free(arr);
+	// arr = (int *)ft_calloc(0, 0);
+	// if (arr == NULL) {
+	// 	printf("Memory allocation failed.\n");
+	// 	return 1;
+	// }
+	// free(arr);
 	return 0;
 }*/

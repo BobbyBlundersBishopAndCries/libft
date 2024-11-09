@@ -29,10 +29,10 @@ char	*ft_strchr(const char *s, int c)
 }
 /*
 int main() {
-    const char *str = "Hello, World!";
+    const char *str = NULL;
     char c = '\0';
 
-    char *result = ft_strchr(str, c);
+    char *result = strchr(str, c);
 
     if (result) {
         printf("Found '%c' at position: %zu\n", c, result - str);

@@ -20,11 +20,9 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 
 	a = (unsigned char *)s1;
 	b = (unsigned char *)s2;
-	if (a[0] == '\0' && b[0] == '\0')
-		return (0);
-	i = 0;
 	if (n == 0)
 		return (0);
+	i = 0;
 	while (i < n)
 	{
 		if (a[i] != b[i])
@@ -33,7 +31,8 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-// int main() {
-//     const char *str1 = "hello";
-//     return 0;
-// }
+/*
+int main() {
+	printf("%d\n",memcmp("chi 9lwa",NULL,5));     
+     return 0;
+ }*/

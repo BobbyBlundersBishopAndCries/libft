@@ -24,18 +24,14 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
-
-/* The signedness of characters (whether they are char or unsigned 
- * char) does notaffect how the null terminator operates. 
- * A null terminator simply indicates where the string ends, 
- * and any subsequent characters are not considered part of that string.
+/*
 int main() {
-    char str[50] = "Hello, World!";
+    char *str = NULL;
 
     printf("Original string: \"%s\"\n", str);
 
     // Using ft_bzero to set the first 5 characters to '\0'
-    ft_bzero(str+5, 5);
+    bzero(str + 5, 5);
 
     // Print the modified string
     printf("Modified string: \"%s\"\n", str); 
