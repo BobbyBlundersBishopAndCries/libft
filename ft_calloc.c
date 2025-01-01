@@ -6,7 +6,7 @@
 /*   By: mohabid <mohabid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 17:57:55 by mohabid           #+#    #+#             */
-/*   Updated: 2025/01/01 14:27:30 by mohabid          ###   ########.fr       */
+/*   Updated: 2025/01/01 14:40:07 by mohabid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	size_t			i;
 
 	i = 0;
-	if (size != 0 && nmemb > __SIZE_MAX__/ size)
+	if (size != 0 && nmemb > __SIZE_MAX__ / size)
 		return (NULL);
 	ptr = (unsigned char *)malloc(size * nmemb);
 	if (!ptr)
