@@ -6,7 +6,7 @@
 /*   By: mohabid <mohabid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 16:38:26 by mohabid           #+#    #+#             */
-/*   Updated: 2025/01/01 14:36:01 by mohabid          ###   ########.fr       */
+/*   Updated: 2025/01/01 16:01:10 by mohabid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include "ft_printf.h"
+# include "get_next_line.h"
 
 int					ft_isalpha(int c);
 int					ft_isdigit(int c);
