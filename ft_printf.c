@@ -12,14 +12,14 @@
 
 #include "ft_printf.h"
 
-int	ft_printf(const char *s, ...)
+int	ft_printf(int fd, const char *s, ...)
 {
 	va_list	ap;
 	int		count;
 
 	count = 0;
 	va_start(ap, s);
-	if (!s || write(1, 0, 0) == -1)
+	if (!s)
 		return (-1);
 	while (*s)
 	{
@@ -27,12 +27,12 @@ int	ft_printf(const char *s, ...)
 		{
 			s++;
 			if (*s != '\0')
-				count += ft_print_format(*s++, ap);
+				count += ft_print_format(*s++, ap, fd);
 			else
 				break ;
 		}
 		else
-			count += ft_putchar(*s++);
+			count += ft_putchar(*s++, fd);
 	}
 	va_end(ap);
 	return (count);

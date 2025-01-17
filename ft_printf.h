@@ -16,11 +16,11 @@
 # include <limits.h>
 # include <unistd.h>
 
-int	ft_putchar(int c);
-int	ft_putstr(const char *s);
-int	ft_putnbr_lower(long n, int base);
-int	ft_putnbr_upper(long n, int base);
-int	ft_print_format(char spec, va_list ap);
-int	ft_putnbr_pointer(unsigned long n, unsigned int base);
-int	ft_printf(const char *s, ...);
+int	ft_putchar(int c, int fd);
+int	ft_putstr(const char *s, int fd);
+int	ft_putnbr_lower(long n, int base, int fd);
+int	ft_putnbr_upper(long n, int base, int fd);
+int	ft_print_format(char spec, va_list ap, int fd);
+int	ft_putnbr_pointer(unsigned long n, unsigned int base, int fd);
+int	ft_printf(int fd, const char *s, ...);
 #endif
